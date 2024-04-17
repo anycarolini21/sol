@@ -3,27 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sol.MainPage">
  <Grid> 
+
+ <Image Source="diaensolarado.jpg"
+        Aspect="Fill"/>
+
+ <Frame Grid.Row="2"
+        Grid.Column="1"
+        VerticalOptions="Start"
+        BackgroundColor="#55000000"
+        BorderColor="White"
+        HeightRequest="200"
+        Padding="6"
+        CornerRadius="30">
+
+  <Grid>
+   <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+
+        <Label  Text="31°C"
+                HorizontalTextAlignment="Center"
+                FontSize="50"
+                TextColor="White"
+                Grid.Row="0" />
+
+        <Label  Text="Ensolarado"
+                HorizontalTextAlignment="Center"
+                FontSize="30"
+                TextColor="White"
+                Grid.Row="1"/>
+
+        <Label  Text="California PR :)"
+                HorizontalTextAlignment="Center"
+                FontSize="18"
+                TextColor="White"
+                Grid.Row="2"/>
+
+
  
-        <Image x:Name="img"
-                Aspect="Fill"/>
-         <Frame  HeightRequest="120"
-                 CornerRadius="20"
-                 BackgroundColor="#a38d6d"
-                 Margin="20"
-                 VerticalOptions="Start">
-                <Grid>
-                        <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width= "*"/>
-                        </Grid.ColumnDefinitions>
-                        Imagefrae;;;;;
-
+ 
+        </Grid>
+        </Frame>
 </Grid>
 
 </ContentPage>
