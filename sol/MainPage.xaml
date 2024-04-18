@@ -3,50 +3,105 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="sol.MainPage">
  <Grid> 
-
- <Image Source="diaensolarado.jpg"
-        Aspect="Fill"/>
-
- <Frame Grid.Row="2"
-        Grid.Column="1"
-        VerticalOptions="Start"
-        BackgroundColor="#55000000"
-        BorderColor="White"
-        HeightRequest="200"
-        Padding="6"
-        CornerRadius="30">
-
-  <Grid>
-   <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-    </Grid.RowDefinitions>
+        <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
 
-        <Label  Text="31°C"
-                HorizontalTextAlignment="Center"
-                FontSize="50"
-                TextColor="White"
-                Grid.Row="0" />
 
-        <Label  Text="Ensolarado"
-                HorizontalTextAlignment="Center"
-                FontSize="30"
-                TextColor="White"
-                Grid.Row="1"/>
+        <Image Source="diaensolarado.jpg"
+                Aspect="AspectFill"
+                Grid.RowSpan="5"
+                Grid.ColumnSpan="3" />
 
-        <Label  Text="California PR :)"
-                HorizontalTextAlignment="Center"
-                FontSize="18"
-                TextColor="White"
-                Grid.Row="2"/>
+        <Frame Grid.Row="2"
+                Grid.Column="1"
+                VerticalOptions="Start"
+                BackgroundColor="#55000000"
+                BorderColor="White"
+                HeightRequest="150"
+                Padding="6"
+                CornerRadius="30">
+
+                <Grid>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
 
- 
- 
-        </Grid>
+                        <Label  Text="31°C"
+                                HorizontalTextAlignment="Center"
+                                FontSize="40"
+                                TextColor="White"
+                                Grid.Row="0" />
+
+                        <Label  Text="Ensolarado"
+                                HorizontalTextAlignment="Center"
+                                FontSize="30"
+                                TextColor="White"
+                                Grid.Row="1"/>
+
+                        <Label  Text="California PR :)"
+                                HorizontalTextAlignment="Center"
+                                FontSize="18"
+                                TextColor="White"
+                                Grid.Row="2"/>
+                </Grid>
         </Frame>
-</Grid>
 
-</ContentPage>
+        <Frame Grid.Row="3"
+                Grid.Column="1"
+              
+                VerticalOptions="Start"
+                BackgroundColor="#55000000"
+                BorderColor="White"
+                HeightRequest="200"
+                Padding="6"
+                CornerRadius="30">
+                
+                <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                
+                <Label  Text="Chuva"
+                        HorizontalTextAlignment="Start"
+                        FontSize="20"
+                        TextColor="White"
+                        Grid.Row="0"
+                        FontFamily="Romann.ttf"/>
+
+                <Label  Text="Umidade:"
+                        HorizontalTextAlignment="Start"
+                        FontSize="20"
+                        TextColor="White"
+                        Grid.Row="1"
+                        FontFamily="Romann.ttf"/>
+
+
+
+        
+        
+                </Grid>
+                </Frame>
+                
+
+        </Grid>
+
+        </ContentPage>
