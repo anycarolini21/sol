@@ -24,8 +24,10 @@
                 Grid.RowSpan="5"
                 Grid.ColumnSpan="3" />
 
-        <Frame Grid.Row="2"
-                Grid.Column="1"
+        <Frame Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin="10"
                 VerticalOptions="Start"
                 BackgroundColor="#55000000"
                 BorderColor="White"
@@ -61,9 +63,9 @@
                 </Grid>
         </Frame>
 
-        <Frame Grid.Row="3"
-                Grid.Column="1"
-              
+        <Frame Grid.Row="1"
+                Grid.Column="0"
+                Margin="40"
                 VerticalOptions="Start"
                 BackgroundColor="#55000000"
                 BorderColor="White"
@@ -72,36 +74,74 @@
                 CornerRadius="30">
                 
                 <Grid>
-                <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
 
                 
-                <Label  Text="Chuva"
-                        HorizontalTextAlignment="Start"
-                        FontSize="20"
-                        TextColor="White"
-                        Grid.Row="0"
-                        FontFamily="Romann.ttf"/>
+                        <Label  Text="Sol"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                TextColor="White"
+                                Grid.Row="0"
+                                FontFamily="Romann.ttf"/>
 
-                <Label  Text="Umidade:"
-                        HorizontalTextAlignment="Start"
-                        FontSize="20"
-                        TextColor="White"
-                        Grid.Row="1"
-                        FontFamily="Romann.ttf"/>
+                        <Label  Text="Sunrise"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                TextColor="White"
+                                Grid.Row="1"
+                                FontFamily="Romann.ttf"/>
 
+                        <Label  Text="Sunset"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                TextColor="White"
+                                Grid.Row="2"
+                                FontFamily="Romann.ttf"/>
 
-
-        
-        
                 </Grid>
-                </Frame>
+        </Frame>
+
+        <Frame Grid.Row="1"
+                Grid.Column="3"
+                Margin="40"
+                VerticalOptions="Start"
+                BackgroundColor="#55000000"
+                BorderColor="White"
+                HeightRequest="200"
+                Padding="6"
+                CornerRadius="30">
                 
+                <Grid>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
 
-        </Grid>
+        
+                        <Label  Text="Fase da lua"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                TextColor="White"
+                                Grid.Row="3"
+                                FontFamily="Romann.ttf"/>
 
-        </ContentPage>
+                        <Label  Text="Crescente"
+                                HorizontalTextAlignment="Start"
+                                FontSize="20"
+                                TextColor="White"
+                                Grid.Row="3"
+                                FontFamily="Romann.ttf"/>
+
+
+
+                </Grid>
+        </Frame>
+        
+</Grid>
+</ContentPage>
