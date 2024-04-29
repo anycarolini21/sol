@@ -21,6 +21,7 @@
 
 
         <Image Source="diaensolarado.jpg"
+                 x:Name="imgFundo"
                 Aspect="AspectFill"
                 Grid.RowSpan="5"
                 Grid.ColumnSpan="3" />
@@ -44,13 +45,15 @@
 
 
                         <Label  Text="31°C"
+                                x:Name="Labeltemp"
                                 HorizontalTextAlignment="Center"
                                 FontSize="40"
                                 TextColor="White"
                                  FontFamily="Romann.ttf"
                                 Grid.Row="0" />
 
-                        <Label  Text="Ensolarado"
+                        <Label  Text="jhgjhgjhgjhgj"
+                                x:Name= "Labeldescription"
                                 HorizontalTextAlignment="Center"
                                  FontFamily="Romann.ttf"
                                 FontSize="30"
@@ -58,6 +61,7 @@
                                 Grid.Row="1"/>
 
                         <Label  Text="California PR :)"
+                                x:Name="Labelcity"
                                 HorizontalTextAlignment="Center"
                                  FontFamily="Romann.ttf"
                                 FontSize="18"
@@ -85,20 +89,23 @@
 
                 
                         <Label  Text="Sol"
+
                                 HorizontalTextAlignment="Center"
                                 FontSize="15"
                                 TextColor="White"
                                 Grid.Row="0"
                                 FontFamily="Romann.ttf"/>
 
-                        <Label  Text="Nascer: 6:00"
+                        <Label  Text="Nascer: "
+                                 x:Name="Labelsunrise"
                                 HorizontalTextAlignment="Start"
                                 FontSize="10"
                                 TextColor="White"
                                 Grid.Row="1"
                                 FontFamily="Romann.ttf"/>
 
-                        <Label  Text="Por: 18:00"
+                        <Label  Text="Por: "
+                                 x:Name="Labelsunset"
                                 FontSize="10"
                                 TextColor="White"
                                 Grid.Row="2"
@@ -135,8 +142,9 @@
                                 Grid.Row="0"
                                 FontFamily="Romann.ttf"/>
 
-                        <Label  Text="Crescente"
-                                HorizontalTextAlignment="Start"
+                        <Label  Text=""
+                                x:Name="Labelmoon_phase"
+                                HorizontalTextAlignment="Center"
                                 FontSize="10"
                                 TextColor="White"
                                 Grid.Row="1" 
@@ -169,6 +177,7 @@
 
                                 
                                                 <Label  Text="Vento"
+                                                   
                                                  HorizontalTextAlignment="Center"
                                                         FontSize="15"
                                                         Grid.ColumnSpan="2"
@@ -176,7 +185,16 @@
                                                         Grid.Row="0"
                                                         FontFamily="Romann.ttf"/>
 
-                                                <Label  Text="Pouco"
+                                                <Label  Text=""
+                                                x:Name="Labelwind_speedy"
+                                                        HorizontalTextAlignment="Start"
+                                                        FontSize="10"
+                                                        TextColor="White"
+                                                        Grid.Row="1"
+                                                        Grid.ColumnSpan="2"
+                                                        FontFamily="Romann.ttf"/>
+                                                          <Label  Text=""
+                                                x:Name="Labelwind_direction"
                                                         HorizontalTextAlignment="Start"
                                                         FontSize="10"
                                                         TextColor="White"
@@ -204,20 +222,46 @@
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
-
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
 
                         <Label  Text="Chuva"
+                
                                 HorizontalTextAlignment="Center"
                                 FontSize="20"
                                 TextColor="White"
                                 FontFamily="Romann.ttf"
+                                 Grid.Column="0"
                                 Grid.Row="0" />
 
-                        <Label  Text="Umidade:"
+                               <Label  Text="Chuva"
+                         x:Name="Labelrain"
+                                HorizontalTextAlignment="Center"
+                                FontSize="20"
+                                TextColor="White"
+                                FontFamily="Romann.ttf"
+                                 Grid.Column="0"
+                                Grid.Row="1" />
+
+                                 <Label  Text="Umidade:"
+                      
                                 HorizontalTextAlignment="Center"
                                 FontSize="10"
                                 TextColor="White"
                                 FontFamily="Romann.ttf"
+                                Grid.Column="1"
+                                Grid.Row="0"/>
+
+
+                        <Label  
+                         x:Name="Labelhumidity"
+                                HorizontalTextAlignment="Center"
+                                FontSize="10"
+                                TextColor="White"
+                                FontFamily="Romann.ttf"
+                                Grid.Column="1"
                                 Grid.Row="1"/>
 
                 </Grid>

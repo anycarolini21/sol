@@ -3,7 +3,7 @@ namespace sol;
 public class Results
 {
     public int temp {get; set;}
-    public string descripton {get; set;}
+    public string description {get; set;}
     public string city {get; set;}
     public string currently {get; set;}
     public string date {get; set;} 
@@ -14,5 +14,7 @@ public class Results
     public string sunset {get; set;}
     public double rain {get; set;} 
     public int humidity {get; set;} 
-
+    public string wind_speedy {get; set;}   
+    public int wind_direction {get; set;}
+    public double cloudiness {get; set;}
 }
