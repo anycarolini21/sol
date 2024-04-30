@@ -45,6 +45,7 @@ public partial class MainPage : ContentPage
 		Labelsunset.Text =resposta.results.sunset;
 		Labelwind_speedy.Text =resposta.results.wind_speedy;
 		Labelwind_direction.Text =resposta.results.wind_direction.ToString();
+		Labelwind_cardinal.Text =resposta.results.wind_cardinal.ToString();
 		Labelmoon_phase.Text =resposta.results.moon_phase.ToString();
 			if (resposta.results.moon_phase=="new")
 			Labelmoon_phase.Text= "Lua Nova";
